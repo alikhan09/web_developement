@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,8 @@
 <body bgcolor="aqua">
 
     <h1 style="margin: 40%;border: 2px solid black; display: inline;">Birds for sale </h1>
-    <p>We are selling different types of birds. You can find your favourite birds over there. </p>
-    <table border="3px" style="margin-left: 40% ;margin-top: 70px; text-align: center;">
+    <p>We are selling different types of birds. <div></div> You can find your favourite birds over there. </p>
+    <table border="3px" style="margin-left: 40% ;margin-top: 70px; text-align: center; background-color: antiquewhite;">
         <tr>
 
         <td>Category</td>
@@ -41,5 +42,14 @@
     </tr>
 </table>
     <img src="img.jfif" alt="image not found" height="400px" width="700px" style="margin-top: 40px;">
+    <div class="form">
+        <form action="info.php">
+            <input type="text" name="name_info" id="name" placeholder="Enter your name" class = "form_2" ><br>
+            <input type="email" name="email_info" id="email" placeholder="Enter your email" class = "form_2"><br>
+            <input type="radio" name="gender_info" id="genderA">Male   <input type="radio" name="gender_info" id="genfderB">Female <br>
+        <textarea name="" id="" cols="20" rows="10"placeholder="Enter the discription"class = "form_2"></textarea><br>
+        <input type="submit" value="Submit now">
+        </form>
+    </div>
 </body>
 </html>
